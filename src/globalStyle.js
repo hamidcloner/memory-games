@@ -7,6 +7,8 @@ import Shabnam from './assets/fonts/Shabnam.ttf';
 import VazirBold from './assets/fonts/Vazir-Bold-FD.woff';
 import VazirRegular from './assets/fonts/Vazir-Regular-FD.woff';
 
+import breakPoints,{sizes} from './breakPoints';
+
 
 
 
@@ -61,9 +63,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight : normal;
         src : url(${Shabnam}) format('truetype');
     };
-    body {
-        background-color : yellow;
-    }
+
+
+  
+
  
 
 `;
