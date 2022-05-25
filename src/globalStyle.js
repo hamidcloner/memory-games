@@ -63,13 +63,13 @@ const GlobalStyle = createGlobalStyle`
         font-weight : normal;
         src : url(${Shabnam}) format('truetype');
     };
-
-
-  
-
- 
+    html {
+        font-size : 10px;
+    }
 
 `;
+
+
 
 
 export default GlobalStyle;
