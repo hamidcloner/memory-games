@@ -1,10 +1,10 @@
-
+import { Container } from '../../globalStyle';
 
 
 const HomePage = () => {
     return (
         <>
-            <p>Home Page</p>
+            <Container>Hello</Container>
         </>
         
     )

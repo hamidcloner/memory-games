@@ -68,6 +68,45 @@ const GlobalStyle = createGlobalStyle`
     }
 
 `;
+export const Container = styled.div`
+
+    border : 1px solid gray;
+    ${(props) => {
+        if(props.fluid){
+            return `width : 100%;`;
+        } else {
+            return `
+                max-width : 120rem;
+                margin-right : auto;
+                margin-left : auto;
+                padding-right : 1rem;
+                padding-left : 1rem;
+
+                @media only screen and ${breakPoints.xs_device}{
+                    width : 100%;
+                };
+                @media only screen and ${breakPoints.sm_device}{ 
+                    max-width : 57.6rem;
+                };
+                @media only screen and ${breakPoints.md_device}{
+                    max-width : 73.6rem;
+                };
+                @media only screen and ${breakPoints.lg_device}{
+                    max-width : 96rem;
+                };
+                @media only screen and ${breakPoints.xl_device}{
+                    max-width : 114rem;
+                };
+                @media only screen and ${breakPoints.xxl_device}{
+                    max-width : 120rem;
+                };
+
+
+            `
+        }
+
+    }};  
+`;
 
 
 
