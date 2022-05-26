@@ -66,6 +66,11 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size : 10px;
     }
+    body {
+        min-height : 100vh;
+        background-image : linear-gradient(to bottom right,${({theme}) => theme.mainPalette.bgColor.bluePalette.a},${({theme}) => theme.mainPalette.bgColor.bluePalette.b});
+        
+    }
 
 `;
 export const Container = styled.div`
@@ -86,19 +91,19 @@ export const Container = styled.div`
                     width : 100%;
                 };
                 @media only screen and ${breakPoints.sm_device}{ 
-                    max-width : 57.6rem;
+                    width : 57.6rem;
                 };
                 @media only screen and ${breakPoints.md_device}{
-                    max-width : 73.6rem;
+                    width : 73.6rem;
                 };
                 @media only screen and ${breakPoints.lg_device}{
-                    max-width : 96rem;
+                    width : 96rem;
                 };
                 @media only screen and ${breakPoints.xl_device}{
-                    max-width : 114rem;
+                    width : 114rem;
                 };
                 @media only screen and ${breakPoints.xxl_device}{
-                    max-width : 120rem;
+                    width : 120rem;
                 };
 
 
@@ -108,7 +113,19 @@ export const Container = styled.div`
     }};  
 `;
 
+export const Row = styled.div`
+    display : flex;
+    flex-wrap : wrap;
+    margin-right : -1rem;
+    margin-left : -1rem;
+    justify-content : center;
+`;
+
 
 
 
 export default GlobalStyle;
+
+
+
+

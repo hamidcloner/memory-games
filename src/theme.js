@@ -1,6 +1,6 @@
-export const homeScreenPagePalette = {
+export const mainPalette = {
     bgColor : {
-        blueColor : {
+        bluePalette : {
             a : '#03045E',
             b : '#0077B6',
             c : '#00B4D8',
