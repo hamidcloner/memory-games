@@ -11,6 +11,8 @@ export const CardCol = styled.div`
     padding-bottom : 1rem;
 `;
 export const CardContainer = styled.div`
-    border : 1px solid yellow;
+    border : 1px solid gray;
     height : 30rem; 
-`
+`;
+
+export const CardImage = styled.div``;

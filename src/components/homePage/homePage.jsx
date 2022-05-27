@@ -14,7 +14,7 @@ const HomePage = () => {
             <Container>
                 <Row>
                 {GameCardDetail && GameCardDetail.map((game) => (
-                    <GameCard/> 
+                    <GameCard key={game.id} img={game.gameImg} title={game.gameName} desc={game.gameDesc} /> 
                 ))}
                 </Row>
              

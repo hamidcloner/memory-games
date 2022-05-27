@@ -9,6 +9,8 @@ import Paint from './components/paint/paint';
 import PuzzleGame from './components/puzzle/puzzleGame';
 import SudokuGame from './components/sudoku/sudokuGame';
 import XOGame from './components/xo/xoGame';
+import SnakeLadderGame from './components/snakeLadderGame/SnakeLadderGame';
+import ChessGame from './components/chessGame/ChessGame';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path="/puzzle-game" element={<PuzzleGame />} />
           <Route path="/sudoku-game" element={<SudokuGame />} />
           <Route path="/ludo-game" element={<LudoGame />}/>
+          <Route path="/snake-ladder-game" element={<SnakeLadderGame />}/>
+          <Route path="/chess-game" element={<ChessGame />} />
 
         </Routes>
       </>
