@@ -12,29 +12,19 @@ export const CardCol = styled.div`
     padding-bottom : 1rem;
 `;
 export const CardContainer = styled.div`
-    border : 1px solid gray;
     border-radius : .5rem;
-    height : 30rem; 
     background-color : #ccc;
 `;
 
-export const CardImage = styled.div`
-    height : 15rem;
- 
-`;
 
 
 export const CardBody = styled.div`
     padding : 2rem 1rem;
-    border : ${({theme : {defaultStyles}}) => defaultStyles.border}
-    
-
 `;
 export const GameName = styled.p`
     text-align : center;
     font-size : 3rem;
     padding : 1rem 0;
-        border : ${({theme : {defaultStyles}}) => defaultStyles.border}
 `;
 
 
@@ -42,7 +32,6 @@ export const GameStatus = styled.div`
     display : flex;
     align-items : center;
     justify-content : space-around;
-    border : ${({theme : {defaultStyles}}) => defaultStyles.border}
 `;
 export const Like = styled.div`
     width : 4rem;
@@ -70,9 +59,11 @@ export const DisLike = styled.div`
 `;
 
 export const GameDetail = styled.div`
-    border : ${({theme : {defaultStyles}}) => defaultStyles.border};
-    padding : 0 .9rem;
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
     margin : 1rem 0;
+    font-size : 1.2rem;
 `;
 
 export const GameRank = styled.span`
@@ -82,6 +73,13 @@ export const GameStar = styled.span`
 `;
 
 export const GoToGameButton = styled(Link)`
-    border : ${({theme : {defaultStyles}}) => defaultStyles.border}
+    display : block;
+    margin : 2rem;
+    text-align : center;
+    padding : .5rem 1rem;
+    font-size : 1.5rem;
+    border-radius : .5rem;
+    background-color : ${({theme : {mainPalette : {bgColor : {bluePalette}}}}) => bluePalette.c}
+
 `;
 
