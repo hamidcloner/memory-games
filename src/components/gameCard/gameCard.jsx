@@ -1,35 +1,45 @@
 import {
     CardContainer,
     CardCol,
-    CardImage,
     GameName,
-    GameDesc,
+    GameStatus,
     GameDetail,
     GameRank,
     GameStar,
     CardBody,
+    GoToGameButton,
+    Like,
+    DisLike,
+    Favorite,
 } from './gameCard.elements';
+import {AiOutlineLike,AiOutlineDislike,AiOutlineStar} from 'react-icons/ai';
+import { IconContext } from 'react-icons/lib';
 
-import GoToGameButton from ''
 
 
 
-const GameCard = () => {
+const GameCard = ({title,url,rank,star}) => {
     return (
-        <CardCol>
-            <CardContainer>
-                <CardImage></CardImage>
-                <CardBody>
-                    <GameName></GameName>
-                    <GameDesc></GameDesc>
-                    <GameDetail>
-                        <GameRank></GameRank>
-                        <GameStar></GameStar>
-                    </GameDetail>
-                    <GoToGameButton />
-                </CardBody>
-            </CardContainer>
-        </CardCol>
+        <IconContext.Provider value={{size : '2.5rem',color : '#ccc'}}>
+            <CardCol>
+                <CardContainer>
+                    <GameName>{title}</GameName>
+                    <CardBody>
+                        
+                        <GameStatus>
+                            <Like><AiOutlineLike /></Like>
+                            <Favorite><AiOutlineStar /></Favorite>
+                            <DisLike><AiOutlineDislike /></DisLike>
+                        </GameStatus>
+                        <GameDetail>
+                            <GameRank>رتبه بازی : {rank}</GameRank>
+                            <GameStar>تعداد ستاره : {star}</GameStar>
+                        </GameDetail>
+                        <GoToGameButton to={url}>بزن بریم!</GoToGameButton>
+                    </CardBody>
+                </CardContainer>
+            </CardCol>
+        </IconContext.Provider>
 
     )
 }

@@ -68,6 +68,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         min-height : 100vh;
+        font-family : VazirBold;
         background-image : linear-gradient(to bottom right,${({theme}) => theme.mainPalette.bgColor.bluePalette.a},${({theme}) => theme.mainPalette.bgColor.bluePalette.b});
         
     }

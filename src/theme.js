@@ -9,4 +9,13 @@ export const mainPalette = {
         } 
         
     }
+};
+export const gameStatusPalette = {
+    like : '#365A08',
+    disLike : '#5A0834',
+    favorite : '#F6C90E'
+}
+
+export const defaultStyles = {
+    border : "1px solid black",
 }
