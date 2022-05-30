@@ -75,6 +75,25 @@ const GlobalStyle = createGlobalStyle`
     }
 
 `;
+
+export const GameWrapper = styled.div`
+    min-height : 100vh;
+    direction : ltr;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    ${({bgImg}) => {
+        if(bgImg){
+            return `
+                background-image : url(${bgImg});
+                background-repeat : no-repeat;
+                background-size : auto;
+                background-position : center;
+                opacity : .5;
+                `;
+        }
+    }}
+`;
 export const Container = styled.div`
 
     
