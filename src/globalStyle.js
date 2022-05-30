@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 export const Container = styled.div`
 
-    border : 1px solid gray;
+    
     ${(props) => {
         if(props.fluid){
             return `width : 100%;`;

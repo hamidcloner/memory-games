@@ -14,6 +14,13 @@ export const CardCol = styled.div`
 export const CardContainer = styled.div`
     border-radius : .5rem;
     background-color : #ccc;
+    transition : transform .5s ease;
+    
+
+    &:hover {
+        transform : translateY(-1rem);
+        transition : transform .5s ease;    
+    }
 `;
 
 
@@ -79,7 +86,8 @@ export const GoToGameButton = styled(Link)`
     padding : .5rem 1rem;
     font-size : 1.5rem;
     border-radius : .5rem;
-    background-color : ${({theme : {mainPalette : {bgColor : {bluePalette}}}}) => bluePalette.c}
+    background-color : ${({theme : {mainPalette : {bgColor : {bluePalette}}}}) => bluePalette.c};
+    cursor : pointer;
 
 `;
 
