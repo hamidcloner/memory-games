@@ -2,9 +2,9 @@ import {
     XOGridItemWrapper,
 } from './xoGridItem.elements';
 
-const XOGridItem = ({rowNum,colNum}) => {
+const XOGridItem = ({rowNum,colNum,id}) => {
     return (
-        <XOGridItemWrapper>
+        <XOGridItemWrapper id={id}>
             {rowNum+''+colNum}
             
         </XOGridItemWrapper>

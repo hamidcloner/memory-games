@@ -19,3 +19,9 @@ export const gameStatusPalette = {
 export const defaultStyles = {
     border : "1px solid black",
 }
+
+export const xoGameStyles = {
+    properties : {
+        borderRadius : '1rem',
+    }
+}
