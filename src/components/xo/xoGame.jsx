@@ -3,6 +3,7 @@ import {
     TicTacGridContainer,
 } from './xoGame.elements';
 import XOGridItem from './xoGridItem';
+import Navbar from '../navbar/navbar';
 
 
 const XOGame = () => {
@@ -26,6 +27,7 @@ const XOGame = () => {
     }
     return (
         <GameWrapper> 
+            <Navbar />
             <TicTacGridContainer>
                 {drawGirdItem()}
             </TicTacGridContainer>

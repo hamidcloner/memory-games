@@ -2,6 +2,7 @@ import GlobalStyle from "./globalStyle";
 import { Route,Routes } from 'react-router-dom';
 import { ThemeProvider } from "styled-components";
 import * as theme from './theme';
+
 // ===== import Main Components ======
 import HomePage from './components/homePage/homePage';
 import LudoGame from './components/ludo/ludoGame';
@@ -15,7 +16,7 @@ import ChessGame from './components/chessGame/ChessGame';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} dir="rtl">
       <>
       
         <GlobalStyle />

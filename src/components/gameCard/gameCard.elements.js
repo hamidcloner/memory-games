@@ -45,7 +45,7 @@ export const Like = styled.div`
     height : 4rem;
     border-radius : 50%;
     text-align : center;
-    line-height : 5.8rem;
+    line-height : 4.8rem;
     background-color : ${({theme : {gameStatusPalette}}) => gameStatusPalette.like};
 `;
 export const Favorite = styled.div`
@@ -53,7 +53,7 @@ export const Favorite = styled.div`
     height : 4rem;
     border-radius : 50%;
     text-align : center;
-    line-height : 5.8rem;
+    line-height : 4.8rem;
     background-color : ${({theme : {gameStatusPalette}}) => gameStatusPalette.favorite};
 `;
 export const DisLike = styled.div`
@@ -61,7 +61,7 @@ export const DisLike = styled.div`
     height : 4rem;
     border-radius : 50%;
     text-align : center;
-    line-height : 5.8rem;
+    line-height : 4.8rem;
     background-color : ${({theme : {gameStatusPalette}}) => gameStatusPalette.disLike};
 `;
 

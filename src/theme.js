@@ -23,5 +23,8 @@ export const defaultStyles = {
 export const xoGameStyles = {
     properties : {
         borderRadius : '1rem',
+    },
+    xoGridItem : {
+        oColor : '#F6C90E',
     }
 }

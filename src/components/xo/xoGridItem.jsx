@@ -1,11 +1,12 @@
 import {
     XOGridItemWrapper,
 } from './xoGridItem.elements';
+import XOBead from './bead';
 
 const XOGridItem = ({rowNum,colNum,id}) => {
     return (
         <XOGridItemWrapper id={id}>
-            {rowNum+''+colNum}
+            <XOBead whichBead="o" />
             
         </XOGridItemWrapper>
     )

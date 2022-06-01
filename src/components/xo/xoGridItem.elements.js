@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 
 export const XOGridItemWrapper = styled.div`
-    border : .1rem solid black;
-    text-align : center;
-    line-height : 15rem;
-    font-size : 2rem;
+    display : flex;
+    align-items : center;
+    justify-content : center;   
 
     // ==== Glassmorphism Effect =====
     background: rgba(255, 255, 255, 0.23);
